@@ -13,3 +13,5 @@ dist
 # settings.json
 yarn-error.log
 src/keys.ts
+.idea
+.idea
