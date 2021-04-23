@@ -1,0 +1,29 @@
+@import 'assets/tokens.scss';
+
+.settings{
+  .form{
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+    .settings-title{
+      color: $white-36;
+    }
+    .form-item{
+      &-checkbox{
+        label{
+          display: block;
+          padding: 2px 0;
+          color: $white-85;
+          transition: color 0.2s;
+          cursor: pointer;
+          &:hover{
+            color: $white-100;
+          }
+        }
+        .help-block{
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}
