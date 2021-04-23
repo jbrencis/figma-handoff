@@ -1,0 +1,76 @@
+.support{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 320px;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #FFF;
+  transform: translateY(100%);
+  transition: transform 0.2s;
+  z-index: 1;
+  &.active{
+    transform: translateY(0);
+  }
+  .support-social{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    a{
+      position: relative;
+      margin: 0 10px;
+      color: #333;
+      transition: color 0.2s;
+      &:hover{
+        color: #18a0fb;
+        .social-wechat{
+          display: block;
+        }
+      }
+      .social-wechat{
+        display: none;
+        position: absolute;
+        left: -48px;
+        top: 30px;
+        width: 120px;
+        padding: 6px;
+        border-radius: 2px;
+        background-color: #FFF;
+        -webkit-box-shadow: 0 2px 14px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 14px rgba(0, 0, 0, 0.15);
+        z-index: 1;
+        img{
+          display: block;
+        }
+      }
+      .social-copy{
+        position: absolute;
+        left: -18px;
+        top: 30px;
+        width: 60px;
+        padding: 2px;
+        border-radius: 2px;
+        color: #FFF;
+        background-color: rgba(0, 0, 0, 0.85);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.2s, transform 0.2s;
+        &-visible{
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+  img{
+    width: 100%;
+  }
+  a{
+    padding-top: 10px;
+  }
+  button{
+    display: block;
+    width: 100%;
+    margin-top: 60px;
+  }
+}

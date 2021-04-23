@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "dist",
+    "jsx": "react",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "paths": {
+        "@app/*": ["app/*"],
+        "@components/*": ["app/components/*"],
+        "@pages/*": ["app/pages/*"],
+        "@assets/*": ["app/assets/*"],
+        "@lang/*": ["app/lang/*"],
+        "@utils/*": ["utils/*"],
+    }
+  },
+  "exclude": [
+    "ExportSettings/*"
+  ]
+}
